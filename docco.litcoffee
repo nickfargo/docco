@@ -285,7 +285,7 @@ sections.
 The mirror of `docsSplitText` that we expect markdown to return. We can split
 on this to recover the original sections.
 
-      l.docsSplitHtml = ///<h1>#{l.name}DOCDIVIDER</h1>///
+      l.docsSplitHtml = ///<h1.*?>#{l.name}DOCDIVIDER</h1>///
 
 A function to get the current language we're documenting, based on the
 file extension. Detect and tag "literate" `.ext.md` variants.

@@ -203,7 +203,7 @@
     l.codeSplitText = "\n" + l.symbol + "DIVIDER\n";
     l.codeSplitHtml = RegExp("\\n*<span\\sclass=\"c1?\">" + l.symbol + "DIVIDER<\\/span>\\n*");
     l.docsSplitText = "\n#" + l.name + "DOCDIVIDER\n";
-    l.docsSplitHtml = RegExp("<h1>" + l.name + "DOCDIVIDER</h1>");
+    l.docsSplitHtml = RegExp("<h1.*?>" + l.name + "DOCDIVIDER</h1>");
   }
 
   getLanguage = function(source, config) {
